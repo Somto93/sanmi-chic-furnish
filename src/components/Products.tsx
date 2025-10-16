@@ -1,4 +1,5 @@
 import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 import productDining from "@/assets/product-dining.jpg";
 import productSofa from "@/assets/product-sofa.jpg";
 import productOffice from "@/assets/product-office.jpg";
@@ -12,31 +13,37 @@ const Products = () => {
       image: productDining,
       title: "Dining Collections",
       description: "Elegant dining sets for memorable gatherings",
+      link: "/dining",
     },
     {
       image: productSofa,
       title: "Living Room",
       description: "Luxurious sofas and seating solutions",
+      link: "/living-room",
     },
     {
       image: productOffice,
       title: "Office Furniture",
       description: "Professional workspace essentials",
+      link: "/office",
     },
     {
       image: productBedroom,
       title: "Bedroom Sets",
       description: "Comfortable and stylish bedroom furniture",
+      link: "/bedroom",
     },
     {
       image: productKitchen,
       title: "Kitchen Cabinets",
       description: "Custom kitchen solutions and cabinetry",
+      link: "/kitchen",
     },
     {
       image: productDoors,
       title: "Doors",
       description: "Premium quality doors for every space",
+      link: "/doors",
     },
   ];
 
@@ -55,26 +62,25 @@ const Products = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {products.map((product, index) => (
-            <Card
-              key={index}
-              className="group overflow-hidden border-none shadow-soft hover-lift cursor-pointer"
-            >
-              <div className="aspect-square overflow-hidden">
-                <img
-                  src={product.image}
-                  alt={product.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-              </div>
-              <div className="p-6 bg-card">
-                <h3 className="text-xl font-serif font-bold text-primary mb-2">
-                  {product.title}
-                </h3>
-                <p className="text-muted-foreground">
-                  {product.description}
-                </p>
-              </div>
-            </Card>
+            <Link key={index} to={product.link}>
+              <Card className="group overflow-hidden border-none shadow-soft hover-lift cursor-pointer">
+                <div className="aspect-square overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                </div>
+                <div className="p-6 bg-card">
+                  <h3 className="text-xl font-serif font-bold text-primary mb-2">
+                    {product.title}
+                  </h3>
+                  <p className="text-muted-foreground">
+                    {product.description}
+                  </p>
+                </div>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>
