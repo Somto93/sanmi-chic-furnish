@@ -6,6 +6,8 @@ import productOffice from "@/assets/product-office.jpg";
 import productBedroom from "@/assets/product-bedroom.jpg";
 import productKitchen from "@/assets/product-kitchen.jpg";
 import productDoors from "@/assets/product-doors.jpg";
+import productRoofing from "@/assets/product-roofing.jpg";
+import productWindows from "@/assets/product-windows.jpg";
 
 const Products = () => {
   const products = [
@@ -44,6 +46,18 @@ const Products = () => {
       title: "Doors",
       description: "Premium quality doors for every space",
       link: "/doors",
+    },
+    {
+      image: productRoofing,
+      title: "Roofing Solutions",
+      description: "Durable roofing materials for lasting protection",
+      link: "/roofing",
+    },
+    {
+      image: productWindows,
+      title: "Windows",
+      description: "Premium windows for natural light and elegance",
+      link: "/windows",
     },
   ];
 

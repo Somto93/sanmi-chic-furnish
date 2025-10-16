@@ -11,6 +11,8 @@ import OfficeCollection from "./pages/OfficeCollection";
 import BedroomCollection from "./pages/BedroomCollection";
 import KitchenCollection from "./pages/KitchenCollection";
 import DoorsCollection from "./pages/DoorsCollection";
+import RoofingCollection from "./pages/RoofingCollection";
+import WindowsCollection from "./pages/WindowsCollection";
 
 const queryClient = new QueryClient();
 
@@ -28,6 +30,8 @@ const App = () => (
           <Route path="/bedroom" element={<BedroomCollection />} />
           <Route path="/kitchen" element={<KitchenCollection />} />
           <Route path="/doors" element={<DoorsCollection />} />
+          <Route path="/roofing" element={<RoofingCollection />} />
+          <Route path="/windows" element={<WindowsCollection />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
