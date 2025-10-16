@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Instagram, Facebook } from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface Product {
@@ -39,7 +39,7 @@ const CollectionPage = ({ title, description, products }: CollectionPageProps) =
         </div>
 
         {/* Products Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto pb-24">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-24">
           {products.map((product, index) => (
             <Card
               key={index}
@@ -69,6 +69,46 @@ const CollectionPage = ({ title, description, products }: CollectionPageProps) =
           ))}
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="bg-gradient-hero text-primary-foreground py-12">
+        <div className="container px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h3 className="text-2xl font-serif font-bold mb-4">
+              SANMI LAW FURNITURE
+            </h3>
+            <p className="text-primary-foreground/70 mb-6">
+              Quality Furniture | African Craftsmanship | Lasting Excellence
+            </p>
+            
+            {/* Social Media Links */}
+            <div className="flex items-center justify-center gap-4 mb-6">
+              <a
+                href="https://www.instagram.com/sanmilawfurniture_/?hl=en"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-accent/20 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                aria-label="Visit our Instagram"
+              >
+                <Instagram className="w-6 h-6 text-primary-foreground group-hover:text-accent-foreground transition-colors duration-300" />
+              </a>
+              <a
+                href="https://www.facebook.com/Sanmilaw/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 rounded-full bg-accent/20 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                aria-label="Visit our Facebook"
+              >
+                <Facebook className="w-6 h-6 text-primary-foreground group-hover:text-accent-foreground transition-colors duration-300" />
+              </a>
+            </div>
+
+            <p className="text-sm text-primary-foreground/60">
+              © {new Date().getFullYear()} SANMI LAW FURNITURE. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
