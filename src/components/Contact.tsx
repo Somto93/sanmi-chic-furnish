@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -77,12 +77,35 @@ const Contact = () => {
       {/* Footer */}
       <div className="container px-4 mt-24 pt-12 border-t border-primary-foreground/20">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-2xl font-serif font-bold mb-2">
+          <h3 className="text-2xl font-serif font-bold mb-4">
             SANMI LAW FURNITURE
           </h3>
-          <p className="text-primary-foreground/70 mb-4">
+          <p className="text-primary-foreground/70 mb-6">
             Quality Furniture | African Craftsmanship | Lasting Excellence
           </p>
+          
+          {/* Social Media Links */}
+          <div className="flex items-center justify-center gap-4 mb-6">
+            <a
+              href="https://www.instagram.com/sanmilawfurniture_/?hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-accent/20 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+              aria-label="Visit our Instagram"
+            >
+              <Instagram className="w-6 h-6 text-primary-foreground group-hover:text-accent-foreground transition-colors duration-300" />
+            </a>
+            <a
+              href="https://www.facebook.com/Sanmilaw/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 rounded-full bg-accent/20 hover:bg-accent flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+              aria-label="Visit our Facebook"
+            >
+              <Facebook className="w-6 h-6 text-primary-foreground group-hover:text-accent-foreground transition-colors duration-300" />
+            </a>
+          </div>
+
           <p className="text-sm text-primary-foreground/60">
             © {new Date().getFullYear()} SANMI LAW FURNITURE. All rights reserved.
           </p>
