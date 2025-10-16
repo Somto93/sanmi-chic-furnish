@@ -13,6 +13,7 @@ import KitchenCollection from "./pages/KitchenCollection";
 import DoorsCollection from "./pages/DoorsCollection";
 import RoofingCollection from "./pages/RoofingCollection";
 import WindowsCollection from "./pages/WindowsCollection";
+import RenderingCollection from "./pages/RenderingCollection";
 
 const queryClient = new QueryClient();
 
@@ -32,6 +33,7 @@ const App = () => (
           <Route path="/doors" element={<DoorsCollection />} />
           <Route path="/roofing" element={<RoofingCollection />} />
           <Route path="/windows" element={<WindowsCollection />} />
+          <Route path="/rendering" element={<RenderingCollection />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

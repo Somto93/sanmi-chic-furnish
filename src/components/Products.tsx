@@ -8,6 +8,7 @@ import productKitchen from "@/assets/product-kitchen.jpg";
 import productDoors from "@/assets/product-doors.jpg";
 import productRoofing from "@/assets/product-roofing.jpg";
 import productWindows from "@/assets/product-windows.jpg";
+import productRendering from "@/assets/product-rendering.jpg";
 
 const Products = () => {
   const products = [
@@ -59,6 +60,12 @@ const Products = () => {
       description: "Premium windows for natural light and elegance",
       link: "/windows",
     },
+    {
+      image: productRendering,
+      title: "2D & 3D Rendering",
+      description: "Photorealistic visualizations for architecture and real estate",
+      link: "/rendering",
+    },
   ];
 
   return (
@@ -66,11 +73,10 @@ const Products = () => {
       <div className="container px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 fade-in">
           <h2 className="text-4xl md:text-5xl font-serif font-bold text-primary mb-6">
-            Our Collections
+            Our Collections & Services
           </h2>
           <p className="text-lg text-muted-foreground">
-            Discover our range of meticulously crafted furniture pieces, 
-            each designed to bring elegance and comfort to your space
+            Discover our range of meticulously crafted furniture, premium building materials, and professional visualization services - bringing your vision to life from concept to reality
           </p>
         </div>
 
