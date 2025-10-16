@@ -3,6 +3,8 @@ import productDining from "@/assets/product-dining.jpg";
 import productSofa from "@/assets/product-sofa.jpg";
 import productOffice from "@/assets/product-office.jpg";
 import productBedroom from "@/assets/product-bedroom.jpg";
+import productKitchen from "@/assets/product-kitchen.jpg";
+import productDoors from "@/assets/product-doors.jpg";
 
 const Products = () => {
   const products = [
@@ -26,6 +28,16 @@ const Products = () => {
       title: "Bedroom Sets",
       description: "Comfortable and stylish bedroom furniture",
     },
+    {
+      image: productKitchen,
+      title: "Kitchen Cabinets",
+      description: "Custom kitchen solutions and cabinetry",
+    },
+    {
+      image: productDoors,
+      title: "Doors",
+      description: "Premium quality doors for every space",
+    },
   ];
 
   return (
@@ -41,7 +53,7 @@ const Products = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {products.map((product, index) => (
             <Card
               key={index}
