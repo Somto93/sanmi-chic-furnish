@@ -18,8 +18,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: "info@sanmilawfurniture.com",
-      link: "mailto:info@sanmilawfurniture.com",
+      details: "info@sanmilawfurniture.com.ng",
+      link: "mailto:info@sanmilawfurniture.com.ng",
     },
   ];
 
