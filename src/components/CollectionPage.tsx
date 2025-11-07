@@ -2,6 +2,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, Instagram, Facebook } from "lucide-react";
 import { Link } from "react-router-dom";
+import Header from "@/components/Header";
 
 interface Product {
   image: string;
@@ -19,8 +20,9 @@ interface CollectionPageProps {
 const CollectionPage = ({ title, description, products }: CollectionPageProps) => {
   return (
     <div className="min-h-screen bg-background">
+      <Header />
       {/* Navigation */}
-      <div className="container px-4 py-8">
+      <div className="container px-4 py-8 pt-28">
         <Link to="/">
           <Button variant="ghost" className="mb-8 hover:bg-accent/10">
             <ArrowLeft className="w-4 h-4 mr-2" />
