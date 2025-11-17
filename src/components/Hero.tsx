@@ -24,7 +24,7 @@ const Hero = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-2xl font-light">
-            The most preferred furniture company in the African continents
+            To be the most preferred furniture, doors, windows, and roofing company in the African continent.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 pt-4">
