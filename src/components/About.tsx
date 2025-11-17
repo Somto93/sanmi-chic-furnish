@@ -45,11 +45,7 @@ const About = () => {
               Our Mission
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed text-center">
-              "To be acquainted with creativity that subjected to local craftsmanship and technological 
-              advancement that requires to meet the appropriate standard in delivering furniture for 
-              homes/offices, all and sundry through management efficiency and adaptation to standards, 
-              quality materials, finest products and after-sales service reliability, for the satisfaction 
-              and happiness of our employers, customers and stakeholders"
+              "To deliver precision-built furniture, doors, windows, and roofing structures through the application of advanced carpentry methods, local craftsmanship, and modern fabrication technology. Our mission is to ensure full compliance with construction standards by utilising accurate measurements, quality timber products, structural installation techniques, and strict safety procedures. We aim to provide durable, functional, and aesthetically-crafted woodwork supported by efficient project management and reliable after-sales services for the satisfaction of clients, employees, and stakeholders."
             </p>
           </Card>
         </div>
