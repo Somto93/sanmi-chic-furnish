@@ -34,7 +34,7 @@ const About = () => {
             Our Vision
           </h2>
           <p className="text-xl md:text-2xl text-teal font-medium leading-relaxed">
-            "To be the most preferred furniture company in the African continents"
+            "To become Africa's leading provider of high-quality furniture, doors, windows, and roofing solutions, recognised for superior craftsmanship, structural reliability, and innovative carpentry practices across the continent."
           </p>
         </div>
 
